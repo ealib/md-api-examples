@@ -1,0 +1,15 @@
+{
+    "name": "md-api-examples",
+    "version": "1.0.0",
+    "type": "module",
+    "description": "Collection of scripts to perform simple tasks in managing MDaemon.",
+    "scripts": {
+        "start": "index.js"
+    },
+    "keywords": [],
+    "author": "Emanuele Aliberti",
+    "license": "MIT",
+    "dependencies": {
+        "node-mdaemon-api": "^22.0.3-alpha.19"
+    }
+}
