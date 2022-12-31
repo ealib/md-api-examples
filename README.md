@@ -14,7 +14,7 @@ world.
 > **WARNING**
 >
 > [`node-mdaemon-api`](https://www.npmjs.com/package/node-mdaemon-api)
-> is not ready for production yet. Please, only install and use this
+> is not ready for production yet. Please, only install and use these
 > scripts on Mdaemon test systems. Not on production systems.
 
 ## List of example scripts
