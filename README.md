@@ -19,16 +19,17 @@ world.
 
 ## List of example scripts
 
-| Script                 | Description                                                   |
-|------------------------|---------------------------------------------------------------|
-| `module-print.js`      | Print the `node-mdaemon-api` module object as seen by Node.js |
-| `users-enumerate.js`   | Enumerates all users defined in MDaemon                       |
-| `users-require-2fa.js` | Require Two-Factors Authentication on all MDaemon users       |
-| `system-print.js`      | Print information about host, OS, Node.js, `node-mdaemon-api` |
+| Script                 | Description                                                      |
+|------------------------|------------------------------------------------------------------|
+| `module-print.js`      | Print the `node-mdaemon-api` module object as seen by Node.js    |
+| `user-print.js`        | Print an MDaemon's internal record for a user, given its address |
+| `users-enumerate.js`   | Enumerates all users defined in MDaemon                          |
+| `users-require-2fa.js` | Require Two-Factors Authentication on all MDaemon users          |
+| `system-print.js`      | Print information about host, OS, Node.js, `node-mdaemon-api`    |
 
 ## Legal
 
-Copyright &copy; 2022 Emanuele Aliberti, MTKA
+Copyright &copy; 2022, 2023 Emanuele Aliberti, MTKA
 
 Permission to use, copy, modify, and/or distribute this software for any
 purpose with or without fee is hereby granted, provided that the above
