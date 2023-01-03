@@ -21,6 +21,8 @@ world.
 
 | Script                 | Description                                                      |
 |------------------------|------------------------------------------------------------------|
+| `md-restart.js`        | Request MDaemon to restart (via semaphore file)                  |
+| `md-shutdown.js`       | Request MDaemon to shutdown (via semaphore file)                 |
 | `module-print.js`      | Print the `node-mdaemon-api` module object as seen by Node.js    |
 | `user-print.js`        | Print an MDaemon's internal record for a user, given its address |
 | `users-enumerate.js`   | Enumerates all users defined in MDaemon                          |
