@@ -51,3 +51,18 @@ export function printError(message) {
 export function printErrorNotEvailable() {
     printError('MDaemon not available.');
 }
+
+export function simpleMain(callback, strict) {
+    const md = loadMDaemonAPI(strict);
+
+    if (md.isReady) {
+        if (callback) {
+            return callback(md);
+        } else {
+            printError(`missing callback in ${simpleMain.name}`);
+        }
+    } else {
+        printErrorNotEvailable();
+    }
+    return false;
+}
