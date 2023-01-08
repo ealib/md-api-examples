@@ -19,15 +19,26 @@ world.
 
 ## List of example scripts
 
-| Script                 | Description                                                      |
-|------------------------|------------------------------------------------------------------|
-| `md-restart.js`        | Request MDaemon to restart (via semaphore file)                  |
-| `md-shutdown.js`       | Request MDaemon to shutdown (via semaphore file)                 |
-| `module-print.js`      | Print the `node-mdaemon-api` module object as seen by Node.js    |
-| `user-print.js`        | Print an MDaemon's internal record for a user, given its address |
-| `users-enumerate.js`   | Enumerates all users defined in MDaemon                          |
-| `users-require-2fa.js` | Require Two-Factors Authentication on all MDaemon users          |
-| `system-print.js`      | Print information about host, OS, Node.js, `node-mdaemon-api`    |
+| Script                        | Description                                                      |
+|-------------------------------|------------------------------------------------------------------|
+| `md-restart.js`               | Request MDaemon to restart (via semaphore file)                  |
+| `md-shutdown.js`              | Request MDaemon to shutdown (via semaphore file)                 |
+| `module-print.js`             | Print the `node-mdaemon-api` module object as seen by Node.js    |
+| `user-print.js`               | Print an MDaemon's internal record for a user, given its address |
+| `users-enumerate.js`          | Enumerates all users defined in MDaemon                          |
+| `users-require-2fa.js`        | Require Two-Factors Authentication on all MDaemon users          |
+| `system-disk-stats-report.js` | Send a report with logical disks statistics                      |
+| `system-print.js`             | Print information about host, OS, Node.js, `node-mdaemon-api`    |
+
+## Contributing
+
+Please
+[create a pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request)
+if you intend to contribute a finished, working script.
+
+If you need to contact me, or would like to discuss possible ideas for
+useful scripts in the handling of MDaemon, there is the
+[developers room on Matrix](https://matrix.to/#/#mdaemon-dev:matrix.org).
 
 ## Legal
 

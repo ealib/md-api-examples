@@ -18,6 +18,8 @@
 
 import { createRequire } from 'node:module';
 
+export const require = createRequire(import.meta.url);
+
 export const moduleName = 'node-mdaemon-api';
 
 
@@ -25,8 +27,7 @@ export const moduleName = 'node-mdaemon-api';
  * @param {boolean} strict OPTIONAL; default false
  * @returns any
  */
-export function loadMDaemonAPI(strict) {    
-    const require = createRequire(import.meta.url);
+export function loadMDaemonAPI(strict) {
     const md = require(moduleName);
     if (!md) {
         throw new Error(`Could not load ${moduleName}!`);

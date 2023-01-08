@@ -7,10 +7,15 @@
         "start": "index.js"
     },
     "keywords": [],
-    "author": "Emanuele Aliberti",
+    "author": {
+        "name": "Emanuele Aliberti",
+        "email": "dev@mtka.eu"
+    },
     "license": "MIT",
     "dependencies": {
         "commander": "^9.4.1",
-        "node-mdaemon-api": "^22.0.3-alpha.19"
+        "handlebars": "^4.7.7",
+        "node-mdaemon-api": "^22.0.3-alpha.19",
+        "systeminformation": "^5.17.1"
     }
 }
