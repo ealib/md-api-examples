@@ -21,6 +21,7 @@ world.
 
 | Script                        | Description                                                      |
 |-------------------------------|------------------------------------------------------------------|
+| `lists-enumerate.js`          | Enumerate all mailing lists defined in MDaemon                   |
 | `md-restart.js`               | Request MDaemon to restart (via semaphore file)                  |
 | `md-shutdown.js`              | Request MDaemon to shutdown (via semaphore file)                 |
 | `module-print.js`             | Print the `node-mdaemon-api` module object as seen by Node.js    |
