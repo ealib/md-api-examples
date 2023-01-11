@@ -67,3 +67,7 @@ export function simpleMain(callback, strict) {
     }
     return false;
 }
+
+export function yn(flag) {
+    return flag ? 'yes' : 'no';
+}

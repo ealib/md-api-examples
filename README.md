@@ -21,6 +21,7 @@ world.
 
 | Script                        | Description                                                      |
 |-------------------------------|------------------------------------------------------------------|
+| `cluster-print.js`            | Print a summary of local node clustering configuration           |
 | `lists-enumerate.js`          | Enumerate all mailing lists defined in MDaemon                   |
 | `md-restart.js`               | Request MDaemon to restart (via semaphore file)                  |
 | `md-shutdown.js`              | Request MDaemon to shutdown (via semaphore file)                 |
