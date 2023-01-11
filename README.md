@@ -22,15 +22,16 @@ world.
 | Script                        | Description                                                      |
 |-------------------------------|------------------------------------------------------------------|
 | `cluster-print.js`            | Print a summary of local node clustering configuration           |
+| `list-print.js`               | Print an MDaemon's internal record for a list, given its address |
 | `lists-enumerate.js`          | Enumerate all mailing lists defined in MDaemon                   |
 | `md-restart.js`               | Request MDaemon to restart (via semaphore file)                  |
 | `md-shutdown.js`              | Request MDaemon to shutdown (via semaphore file)                 |
 | `module-print.js`             | Print the `node-mdaemon-api` module object as seen by Node.js    |
+| `system-disk-stats-report.js` | Send a report with logical disks statistics                      |
+| `system-print.js`             | Print information about host, OS, Node.js, `node-mdaemon-api`    |
 | `user-print.js`               | Print an MDaemon's internal record for a user, given its address |
 | `users-enumerate.js`          | Enumerates all users defined in MDaemon                          |
 | `users-require-2fa.js`        | Require Two-Factors Authentication on all MDaemon users          |
-| `system-disk-stats-report.js` | Send a report with logical disks statistics                      |
-| `system-print.js`             | Print information about host, OS, Node.js, `node-mdaemon-api`    |
 
 ## Contributing
 
