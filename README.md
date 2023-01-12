@@ -45,7 +45,17 @@ If you need to contact me, or would like to discuss possible ideas for
 useful scripts in the handling of MDaemon, there is the
 [developers room on Matrix](https://matrix.to/#/#mdaemon-dev:matrix.org).
 
-## Legal
+## Legal disclaimer
+
+MDaemon® is a trademark of [MDaemon Technologies, Ltd.](https://mdaemon.com/pages/about-us)
+MDaemon Technologies makes no representations, endorsements, or
+warranties regarding Third Party Products or Services.
+
+Node.js is a trademark of [OpenJS Foundation](https://openjsf.org/).
+
+Windows&trade; is a [trademark of Microsoft Corp.](https://www.microsoft.com/en-us/legal/intellectualproperty/trademarks)
+
+## License
 
 Copyright &copy; 2022, 2023 Emanuele Aliberti, MTKA
 
