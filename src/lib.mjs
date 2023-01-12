@@ -1,5 +1,5 @@
 /* 
- * Copyright (c) 2022 Emanuele Aliberti, MTKA
+ * Copyright (c) 2022, 2023 Emanuele Aliberti, MTKA
  * 
  * Permission to use, copy, modify, and/or distribute this software for any
  * purpose with or without fee is hereby granted, provided that the above
@@ -53,6 +53,13 @@ export function printErrorNotEvailable() {
     printError('MDaemon not available.');
 }
 
+/**
+ * Helper to simplify script initialisation.
+ * 
+ * @param {function} callback to be called if MDaemon is ready
+ * @param {boolean} strict throw error if module's version and MDaemon's don't match
+ * @returns 
+ */
 export function simpleMain(callback, strict) {
     const md = loadMDaemonAPI(strict);
 
