@@ -4,7 +4,7 @@
     "type": "module",
     "description": "Collection of scripts to perform simple tasks in managing MDaemon.",
     "scripts": {
-        "start": "index.js"
+        "start": "node index.js"
     },
     "keywords": [],
     "author": {
