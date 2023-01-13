@@ -13,9 +13,9 @@
     },
     "license": "MIT",
     "dependencies": {
-        "commander": "^9.4.1",
+        "commander": "^9.5.0",
         "handlebars": "^4.7.7",
         "node-mdaemon-api": "^22.0.3-alpha.19",
-        "systeminformation": "^5.17.1"
+        "systeminformation": "^5.17.3"
     }
 }
