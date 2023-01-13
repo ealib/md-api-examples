@@ -16,19 +16,14 @@
  */
 'use strict';
 
-import {
-    loadMDaemonAPI,
-    printErrorNotEvailable,
-} from './lib.mjs';
+import { simpleMain } from './lib.mjs';
 
-const md = loadMDaemonAPI();
-
-if (md.isReady) {
+function usersEnumerate(md) {
     const users = md.readUsersSync() ?? [];
 
     users.forEach((user, index) => {
         console.log(`${index}: "${user.FullName}" <${user.Email}> `);
     });
-} else {
-    printErrorNotEvailable();
 }
+
+simpleMain(usersEnumerate);

@@ -16,20 +16,14 @@
  */
 'use strict';
 
-import {
-    loadMDaemonAPI,
-    printError,
-    printErrorNotEvailable,
-} from './lib.mjs';
+import { printError, simpleMain } from './lib.mjs';
 
-const md = loadMDaemonAPI();
-
-if (md.isReady) {
+function mdShutdown(md) {
     if (md.sem.shutDownMDaemon()) {
         console.log('Request to stop MDaemon posted successfully.');
     } else {
         printError('Failed to post stop request.');
     }
-} else {
-    printErrorNotEvailable();
 }
+
+simpleMain(mdShutdown);

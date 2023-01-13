@@ -17,26 +17,20 @@
 'use strict';
 
 import { Command } from 'commander';
-import {
-    loadMDaemonAPI,
-    printError,
-    printErrorNotEvailable,
-} from './lib.mjs';
+import { printError, simpleMain } from './lib.mjs';
 
 const program = new Command();
 
 program
     .name('user-print')
     .description('CLI to print a MD user record given its address.')
-    .version('1.0.0')
+    .version('1.0.1')
     .argument('address', 'e-mail address to query MDaemon for');
 
 program.parse();
 const args = program.args;
 
-const md = loadMDaemonAPI();
-
-if (md.isReady) {
+function userPrint(md) {
     args.forEach(address => {
         const hUser = md.MD_GetByEmail(address);
         console.log(`${address}:`);
@@ -49,6 +43,6 @@ if (md.isReady) {
         }
         console.log();
     });
-} else {
-    printErrorNotEvailable();
 }
+
+simpleMain(userPrint);

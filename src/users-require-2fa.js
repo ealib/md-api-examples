@@ -17,13 +17,10 @@
 'use strict';
 
 import {
-    loadMDaemonAPI,
     printError,
-    printErrorNotEvailable,
+    simpleMain,
 } from './lib.mjs';
 
-
-const md = loadMDaemonAPI();
 
 const RESULT_OK = 0;
 const RESULT_NOK = 1;
@@ -34,7 +31,7 @@ const RESULT_SKIPPED = 2;
  * @param {string} address - user's address to force TFA
  * @returns {number}
  */
-function setTwoFactorAutentication(address) {
+function setTwoFactorAutentication(md, address) {
     /** @var {number} result */
     let result = RESULT_NOK;
 
@@ -71,14 +68,14 @@ function setTwoFactorAutentication(address) {
     return result;
 }
 
-if (md.isReady) {
+function usersRequire2fa(md) {
     /** @var {md.UserListItem[]} users */
     const users = md.readUsersSync() ?? [];
 
     users.forEach(user => {
         const address = user.Email;
         let result;
-        switch (setTwoFactorAutentication(address)) {
+        switch (setTwoFactorAutentication(md, address)) {
             case RESULT_OK:
                 result = '    SET';
                 break;
@@ -94,6 +91,6 @@ if (md.isReady) {
         }
         console.log(`- ${result} <${address}>`);
     });
-} else {
-    printErrorNotEvailable();
 }
+
+simpleMain(usersRequire2fa);

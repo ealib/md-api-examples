@@ -16,20 +16,14 @@
  */
 'use strict';
 
-import {
-    loadMDaemonAPI,
-    printError,
-    printErrorNotEvailable,
-} from './lib.mjs';
+import { printError, simpleMain } from './lib.mjs';
 
-const md = loadMDaemonAPI();
-
-if (md.isReady) {
+function mdRestart(md) {
     if (md.sem.restartMDaemon()) {
         console.log('Request to restart MDaemon posted successfully.');
     } else {
         printError('Failed to post restart request.');
     }
-} else {
-    printErrorNotEvailable();
 }
+
+simpleMain(mdRestart);

@@ -16,9 +16,7 @@
  */
 'use strict';
 
-import { loadMDaemonAPI } from './lib.mjs';
-
-const md = loadMDaemonAPI();
+import { simpleMain } from './lib.mjs';
 
 function print(title, obj) {
     console.log(`${title}:`);
@@ -26,5 +24,9 @@ function print(title, obj) {
     console.log();
 }
 
-print('TOP LEVEL', md);
-print('SEM', md.sem);
+function modulePrint(md) {
+    print('TOP LEVEL', md);
+    print('SEM', md.sem);
+}
+
+simpleMain(modulePrint);

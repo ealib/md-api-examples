@@ -16,18 +16,20 @@
  */
 'use strict';
 
-import { hostname, release, type } from 'os';
-import { version } from 'process';
-import { loadMDaemonAPI, moduleName } from './lib.mjs';
+import { hostname, release, type } from 'node:os';
+import { version } from 'node:process';
+import { moduleName, simpleMain } from './lib.mjs';
 
-const md = loadMDaemonAPI();
+function systemPrint(md) {
+    const moduleInfo = md.getModuleInfo();
+    const mdInfo = md.getMdInfo();
 
-const moduleInfo = md.getModuleInfo();
-const mdInfo = md.getMdInfo();
+    console.log('System information:');
+    console.log(`- Local host is "${hostname}"`);
+    console.log(`- Operating system is ${type()} version ${release()}`);
+    console.log(`- Node.js is version ${version}`);
+    console.log(`- MDaemon is version ${mdInfo.version.full}`);
+    console.log(`- ${moduleName} is version ${moduleInfo.version.full}`);
+}
 
-console.log('System information:');
-console.log(`- Local host is "${hostname}"`);
-console.log(`- Operating system is ${type()} version ${release()}`);
-console.log(`- Node.js is version ${version}`);
-console.log(`- MDaemon is version ${mdInfo.version.full}`);
-console.log(`- ${moduleName} is version ${moduleInfo.version.full}`);
+simpleMain(systemPrint);
