@@ -21,6 +21,7 @@ world.
 
 | Script                        | Description                                                          |
 |-------------------------------|----------------------------------------------------------------------|
+| `alias-translate.js`          | Try translating an alias                                             |
 | `cluster-print.js`            | Print a summary of local node clustering configuration               |
 | `domains-enumerate.js`        | Enumerate all domains defined in MDaemon                             |
 | `gateways-enumerate.js`       | Enumerate all gateways defined in MDaemon                            |
