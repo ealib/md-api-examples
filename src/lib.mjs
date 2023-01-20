@@ -1,3 +1,4 @@
+//@ts-check
 /* 
  * Copyright (c) 2022, 2023 Emanuele Aliberti, MTKA
  * 
@@ -18,17 +19,30 @@
 
 import { createRequire } from 'node:module';
 
+/**
+ * @type {NodeRequire}
+ * @readonly
+ */
 export const require = createRequire(import.meta.url);
 
+/**
+ * @type {string}
+ * @readonly
+ */
 export const moduleName = 'node-mdaemon-api';
+
+/**
+ * @typedef { import('node-mdaemon-api') } NodeMDaemonApiModule
+ */
 
 
 /**
- * @param {boolean} strict OPTIONAL; default false
- * @returns any
+ * @param {boolean=} strict OPTIONAL; default false
+ * @returns {NodeMDaemonApiModule}
+ * @throws
  */
 export function loadMDaemonAPI(strict) {
-    const md = require(moduleName);
+    const md = require('node-mdaemon-api');
     if (!md) {
         throw new Error(`Could not load ${moduleName}!`);
     }
@@ -44,11 +58,15 @@ export function loadMDaemonAPI(strict) {
 /**
  * 
  * @param {string} message 
+ * @returns {void}
  */
 export function printError(message) {
     console.error(`ERROR: ${message}`);
 }
 
+/**
+ * @returns {void}
+ */
 export function printErrorNotEvailable() {
     printError('MDaemon not available.');
 }
@@ -57,8 +75,8 @@ export function printErrorNotEvailable() {
  * Helper to simplify script initialisation.
  * 
  * @param {function} callback to be called if MDaemon is ready
- * @param {boolean} strict throw error if module's version and MDaemon's don't match
- * @returns 
+ * @param {boolean=} strict throw error if module's version and MDaemon's don't match
+ * @returns {boolean}
  */
 export function simpleMain(callback, strict) {
     const md = loadMDaemonAPI(strict);
