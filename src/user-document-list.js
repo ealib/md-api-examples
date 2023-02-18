@@ -58,10 +58,10 @@ function userDocumentList(md) {
                 console.log(`Documents in "${docsPath}" (${documentIDs.length}):\n`);
                 documentIDs.forEach((docId, index) => printDocumentInfo(md, docsPath, docId, index));
             } else {
-                console.log('No document in "${docsPath}".');
+                console.log(`No document in "${docsPath}".`);
             }
         } else {
-            console.error(`ERROR: ${result.ErrorMessage} (${result.ErrorCode}) reading "${docsPath}"`);
+            printError(`${result.ErrorMessage} (${result.ErrorCode}) reading "${docsPath}"`);
         }
     });
 }
