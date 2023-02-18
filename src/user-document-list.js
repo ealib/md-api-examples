@@ -42,26 +42,30 @@ function printDocumentInfo(md, docsPath, docId, index) {
 function userDocumentList(md) {
     args.forEach(address => {
         const hUser = md.MD_GetByEmail(address);
-        const docsPath = md.MD_DocumentGetDefaultFolder(hUser);
+        if (hUser) {
+            const docsPath = md.MD_DocumentGetDefaultFolder(hUser);
 
-        console.log('User default document folder:\n');
-        console.log(`  ${address} => "${docsPath}"`);
-        console.log();
+            console.log('User default document folder:\n');
+            console.log(`  ${address} => "${docsPath}"`);
+            console.log();
 
-        const page = 1;
-        const pageSize = 64;
-        const sort = 'ASC';
-        const result = md.MD_DocumentGetMultipleItems(page, pageSize, sort, docsPath);
-        if (result.Succeeded) {
-            const documentIDs = (result.IDs ?? []).sort();
-            if (documentIDs.length) {
-                console.log(`Documents in "${docsPath}" (${documentIDs.length}):\n`);
-                documentIDs.forEach((docId, index) => printDocumentInfo(md, docsPath, docId, index));
+            const page = 1;
+            const pageSize = 64;
+            const sort = 'ASC';
+            const result = md.MD_DocumentGetMultipleItems(page, pageSize, sort, docsPath);
+            if (result.Succeeded) {
+                const documentIDs = (result.IDs ?? []).sort();
+                if (documentIDs.length) {
+                    console.log(`Documents in "${docsPath}" (${documentIDs.length}):\n`);
+                    documentIDs.forEach((docId, index) => printDocumentInfo(md, docsPath, docId, index));
+                } else {
+                    console.log(`No document in "${docsPath}".`);
+                }
             } else {
-                console.log(`No document in "${docsPath}".`);
+                printError(`${result.ErrorMessage} (${result.ErrorCode}) reading "${docsPath}"`);
             }
         } else {
-            printError(`${result.ErrorMessage} (${result.ErrorCode}) reading "${docsPath}"`);
+            printError(`MD_GetByEmail returned undefined for address ${address}`);
         }
     });
 }
