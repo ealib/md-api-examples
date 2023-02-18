@@ -34,6 +34,7 @@ world.
 | `module-print.js`             | Print the `node-mdaemon-api` module object as seen by Node.js        |
 | `system-disk-stats-report.js` | Send a report with logical disks statistics                          |
 | `system-print.js`             | Print information about host, OS, Node.js, `node-mdaemon-api`        |
+| `user-document-list.js`       | List a MD user documents in the default document folder              |
 | `user-print.js`               | Print an MDaemon's internal record for a user, given its address     |
 | `users-enumerate.js`          | Enumerate all users defined in MDaemon                               |
 | `users-require-2fa.js`        | Require Two-Factors Authentication on all MDaemon users              |
