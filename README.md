@@ -36,6 +36,7 @@ world.
 | `system-print.js`             | Print information about host, OS, Node.js, `node-mdaemon-api`        |
 | `user-document-list.js`       | List a MD user documents in the default document folder              |
 | `user-print.js`               | Print an MDaemon's internal record for a user, given its address     |
+| `users-enumerate-roles.js`    | Enumerate all users defined in MDaemon with respective roles         |
 | `users-enumerate.js`          | Enumerate all users defined in MDaemon                               |
 | `users-require-2fa.js`        | Require Two-Factors Authentication on all MDaemon users              |
 
