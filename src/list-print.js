@@ -24,7 +24,7 @@ const program = new Command();
 program
     .name('list-print')
     .description('CLI to print a MD mailing list record given its address.')
-    .version('1.0.0')
+    .version('2.0.0')
     .argument('address', 'e-mail address to query MDaemon for');
 
 program.parse();
@@ -34,8 +34,9 @@ function listPrint(md) {
     args.forEach(address => {
         if (md.MD_ListExists(address)) {
             console.log(`${address}:`);
-            const list = md.MD_InitListInfo(address);
-            console.dir(list);
+            const listInfo = md.MD_InitListInfo(address);
+            listInfo.Members = md.readMailingListMembersSync(address, true) ?? [];
+            console.dir(listInfo);
         } else {
             printError(`list ${address} does NOT exist`);
         }
