@@ -20,8 +20,9 @@ world.
 ## List of example scripts
 
 | Script                        | Description                                                          |
-|-------------------------------|----------------------------------------------------------------------|
+| ----------------------------- | -------------------------------------------------------------------- |
 | `alias-translate.js`          | Try translating an alias                                             |
+| `app-password.js`             | Manage application passwords.                                        |
 | `cluster-print.js`            | Print a summary of local node clustering configuration               |
 | `domains-enumerate.js`        | Enumerate all domains defined in MDaemon                             |
 | `gateways-enumerate.js`       | Enumerate all gateways defined in MDaemon                            |
@@ -44,7 +45,8 @@ world.
 
 Please
 [create a pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request)
-if you intend to contribute a finished, working script.
+if you intend to contribute a finished, working script, fix a bug, or
+improve an existing script.
 
 If you need to contact me, or would like to discuss possible ideas for
 useful scripts in the handling of MDaemon, there is the
