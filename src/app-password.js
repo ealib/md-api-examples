@@ -46,7 +46,7 @@ function commandList(values) {
                     console.dir(appPasswordList);
                 } else {
                     appPasswordList.forEach((ap, index) => {
-                        console.log(index + 1, `Name: "${ap.Name}"; Created: ${ap.CreatedTime.toISOString()}`);
+                        console.log(index + 1, `ID: ${ap.ID}; Created: ${ap.CreatedTime.toISOString()}; Name: "${ap.Name}";`);
                     });
                 }
                 return;
@@ -79,10 +79,10 @@ function commandAdd(values) {
 function commandDelete(values) {
     const { md, email, hUser } = getCommandMdArgs(values, true);
     if (hUser) {
-        if (md.MD_AppPasswordDelete(hUser, values.name)) {
-            console.log(`application password "${values.name}" deleted.`);
+        if (md.MD_AppPasswordDelete(hUser, values.id)) {
+            console.log(`application password "${values.id}" deleted.`);
         } else {
-            printError(`application password "${values.name}" not found.`);
+            printError(`application password "${values.id}" not found.`);
         }
     } else {
         printError(`unknown user "${email}"`);
@@ -158,7 +158,7 @@ program
 program
     .command('delete')
     .requiredOption(roUserFlags, roUserDesc)
-    .requiredOption('-n|--name <name>', 'application password\'s name')
+    .requiredOption('--id <id>', 'application password\'s ID')
     .action(commandDelete);
 
 program
