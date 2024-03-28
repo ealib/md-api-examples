@@ -15,7 +15,7 @@
     "dependencies": {
         "commander": "^12.0.0",
         "handlebars": "^4.7.7",
-        "node-mdaemon-api": "^23.5.2-alpha.26",
-        "systeminformation": "^5.22.0"
+        "node-mdaemon-api": "^23.5.3-alpha.27",
+        "systeminformation": "^5.22.6"
     }
 }
