@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-commander@^12.0.0:
-  version "12.0.0"
-  resolved "https://registry.yarnpkg.com/commander/-/commander-12.0.0.tgz#b929db6df8546080adfd004ab215ed48cf6f2592"
-  integrity sha512-MwVNWlYjDTtOjX5PiD7o5pK0UrFU/OYgcJfjjK4RaHZETNtjJqrZa9Y9ds88+A+f+d5lv+561eZ+yCKoS3gbAA==
+commander@^12.1.0:
+  version "12.1.0"
+  resolved "https://registry.yarnpkg.com/commander/-/commander-12.1.0.tgz#01423b36f501259fdaac4d0e4d60c96c991585d3"
+  integrity sha512-Vw8qHK3bZM9y/P10u3Vib8o/DdkvA2OtPtZvD871QKjy74Wj1WSKFILMPRPSdUSx5RFK1arlJzEtA4PkFgnbuA==
 
 handlebars@^4.7.7:
   version "4.7.8"
@@ -29,20 +29,20 @@ neo-async@^2.6.2:
   resolved "https://registry.yarnpkg.com/neo-async/-/neo-async-2.6.2.tgz#b4aafb93e3aeb2d8174ca53cf163ab7d7308305f"
   integrity sha512-Yd3UES5mWCSqR+qNT93S3UoYUkqAZ9lLg8a7g9rimsWmYGK8cVToA4/sF3RrshdyV3sAGMXVUmpMYOw+dLpOuw==
 
-node-mdaemon-api@^23.5.3-alpha.27:
-  version "23.5.3-alpha.27"
-  resolved "https://registry.yarnpkg.com/node-mdaemon-api/-/node-mdaemon-api-23.5.3-alpha.27.tgz#36d0790fcef29019b0be0e7d58a6ef1da3fc2921"
-  integrity sha512-5UmXdzI13pXY1vbqPbyNXOEBy44RqhpXpGPaY/R9YglhJbXEOiV6Cdom1aPftM6Gfwo1fa6gbxJc0jEfAt1uVA==
+node-mdaemon-api@^23.5.3-alpha.30:
+  version "23.5.3-alpha.30"
+  resolved "https://registry.yarnpkg.com/node-mdaemon-api/-/node-mdaemon-api-23.5.3-alpha.30.tgz#7d9443a72036ed6d0e9d86bd32d4641f17ec3960"
+  integrity sha512-/CFFSyDqXNGQA19WfvgDcpEHTQuqIclZXKmMBfyChchEqOPx5C3z55gZQRDg2Ze0TlR6DiJ2f8L9gxNHcbrltA==
 
 source-map@^0.6.1:
   version "0.6.1"
   resolved "https://registry.yarnpkg.com/source-map/-/source-map-0.6.1.tgz#74722af32e9614e9c287a8d0bbde48b5e2f1a263"
   integrity sha512-UjgapumWlbMhkBgzT7Ykc5YXUT46F0iKu8SGXq0bcwP5dz/h0Plj6enJqjz1Zbq2l5WaqYnrVbwWOWMyF3F47g==
 
-systeminformation@^5.22.6:
-  version "5.22.6"
-  resolved "https://registry.yarnpkg.com/systeminformation/-/systeminformation-5.22.6.tgz#af892bc3ff6df8175f2c16cfc3bd06d1130da5dd"
-  integrity sha512-hUTQX+bRgIFbv1T/z251NtwGwNIeSyWURnT2BGnsYu6dQNbkiBl4oAwk50acVfITFq1Zvb8KDNgibQK9uGlUGg==
+systeminformation@^5.22.9:
+  version "5.22.9"
+  resolved "https://registry.yarnpkg.com/systeminformation/-/systeminformation-5.22.9.tgz#68700a895a48cbf96e2cd6a34c5027d1fe58f053"
+  integrity sha512-qUWJhQ9JSBhdjzNUQywpvc0icxUAjMY3sZqUoS0GOtaJV9Ijq8s9zEP8Gaqmymn1dOefcICyPXK1L3kgKxlUpg==
 
 uglify-js@^3.1.4:
   version "3.17.4"
