@@ -64,7 +64,7 @@ Windows&trade; is a [trademark of Microsoft Corp.](https://www.microsoft.com/en-
 
 ## License
 
-Copyright &copy; 2022, 2023 Emanuele Aliberti, MTKA
+Copyright &copy; 2022-2024 Emanuele Aliberti, MTKA
 
 Permission to use, copy, modify, and/or distribute this software for any
 purpose with or without fee is hereby granted, provided that the above
