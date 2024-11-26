@@ -36,6 +36,7 @@ function printDocumentInfo(md, docsPath, docId, index) {
     console.log(`    Size..........: ${md.MD_DocumentGetFileSize(docsPath, docId)}`);
     console.log(`    Modified by...: ${md.MD_DocumentGetModifiedBy(docsPath, docId)}`);
     console.log(`    Modified time.: ${md.MD_DocumentGetModifiedTime(docsPath, docId)}`);
+    console.log(`    Description...: ${md.MD_DocumentGetDescription(docsPath, docId)}`);
     console.log();
 }
 
