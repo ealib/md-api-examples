@@ -29,20 +29,20 @@ neo-async@^2.6.2:
   resolved "https://registry.yarnpkg.com/neo-async/-/neo-async-2.6.2.tgz#b4aafb93e3aeb2d8174ca53cf163ab7d7308305f"
   integrity sha512-Yd3UES5mWCSqR+qNT93S3UoYUkqAZ9lLg8a7g9rimsWmYGK8cVToA4/sF3RrshdyV3sAGMXVUmpMYOw+dLpOuw==
 
-node-mdaemon-api@^24.0.1-alpha.33:
-  version "24.0.1-alpha.33"
-  resolved "https://registry.yarnpkg.com/node-mdaemon-api/-/node-mdaemon-api-24.0.1-alpha.33.tgz#e0e14ed2079d3b3ef92e0241e97ea00ff2d09c4a"
-  integrity sha512-bFPjTIdgIhS1dDR6OvbHbFMS1vmibUaICOu56r4TT0wnMUG1mAV5bK8Qv3dOKPi/xCZ4Q5ysL1sg6PAX6SAxqQ==
+node-mdaemon-api@^24.5.2-alpha.37:
+  version "24.5.2-alpha.37"
+  resolved "https://registry.yarnpkg.com/node-mdaemon-api/-/node-mdaemon-api-24.5.2-alpha.37.tgz#caf695116b0444269aff9ad22acf900000a6755a"
+  integrity sha512-HKe9H9fEoycOdOkdbAiEVmoQwF/y5wjSp9nvaJRNw/gNCnefZxzJwVsE5lKg7jSlhh4yupevW9i4vEU2Fr8CnQ==
 
 source-map@^0.6.1:
   version "0.6.1"
   resolved "https://registry.yarnpkg.com/source-map/-/source-map-0.6.1.tgz#74722af32e9614e9c287a8d0bbde48b5e2f1a263"
   integrity sha512-UjgapumWlbMhkBgzT7Ykc5YXUT46F0iKu8SGXq0bcwP5dz/h0Plj6enJqjz1Zbq2l5WaqYnrVbwWOWMyF3F47g==
 
-systeminformation@^5.22.11:
-  version "5.22.11"
-  resolved "https://registry.yarnpkg.com/systeminformation/-/systeminformation-5.22.11.tgz#42be7b650ce0a8b940c06219a6647f6ab3f7a349"
-  integrity sha512-aLws5yi4KCHTb0BVvbodQY5bY8eW4asMRDTxTW46hqw9lGjACX6TlLdJrkdoHYRB0qs+MekqEq1zG7WDnWE8Ug==
+systeminformation@^5.23.5:
+  version "5.23.5"
+  resolved "https://registry.yarnpkg.com/systeminformation/-/systeminformation-5.23.5.tgz#bf7544be42c42f7d14a81b02aa0365e9ca1f5266"
+  integrity sha512-PEpJwhRYxZgBCAlWZhWIgfMTjXLqfcaZ1pJsJn9snWNfBW/Z1YQg1mbIUSWrEV3ErAHF7l/OoVLQeaZDlPzkpA==
 
 uglify-js@^3.1.4:
   version "3.17.4"
