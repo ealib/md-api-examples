@@ -1,5 +1,5 @@
 /* 
- * Copyright (c) 2022 Emanuele Aliberti, MTKA
+ * Copyright (c) 2022-2025 Emanuele Aliberti, MTKA
  * 
  * Permission to use, copy, modify, and/or distribute this software for any
  * purpose with or without fee is hereby granted, provided that the above
@@ -29,6 +29,7 @@ function systemPrint(md) {
     console.log(`- Operating system is ${type()} version ${release()}`);
     console.log(`- Node.js is version ${version}`);
     console.log(`- MDaemon is version ${mdInfo.version.full}`);
+    console.log(`- MDaemon is${mdInfo.isCloudVersion ? ' ' : ' not '}Cloud Version`);
     console.log(`- ${moduleName} is version ${moduleInfo.version.full}`);
 }
 
