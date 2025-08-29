@@ -9,23 +9,23 @@ importers:
   .:
     dependencies:
       commander:
-        specifier: ^12.1.0
-        version: 12.1.0
+        specifier: ^14.0.0
+        version: 14.0.0
       handlebars:
         specifier: ^4.7.7
         version: 4.7.8
       node-mdaemon-api:
-        specifier: 25.0.0-alpha.38
-        version: 25.0.0-alpha.38
+        specifier: 25.0.3-alpha.42
+        version: 25.0.3-alpha.42
       systeminformation:
-        specifier: ^5.23.5
-        version: 5.25.11
+        specifier: ^5.27.8
+        version: 5.27.8
 
 packages:
 
-  commander@12.1.0:
-    resolution: {integrity: sha512-Vw8qHK3bZM9y/P10u3Vib8o/DdkvA2OtPtZvD871QKjy74Wj1WSKFILMPRPSdUSx5RFK1arlJzEtA4PkFgnbuA==}
-    engines: {node: '>=18'}
+  commander@14.0.0:
+    resolution: {integrity: sha512-2uM9rYjPvyq39NwLRqaiLtWHyDC1FvryJDa2ATTVims5YAS4PupsEQsDvP14FqhFr0P49CYDugi59xaxJlTXRA==}
+    engines: {node: '>=20'}
 
   handlebars@4.7.8:
     resolution: {integrity: sha512-vafaFqs8MZkRrSX7sFVUdo3ap/eNiLnb4IakshzvP56X5Nr1iGKAIqdX6tMlm6HcNRIkr6AxO5jFEoJzzpT8aQ==}
@@ -38,17 +38,18 @@ packages:
   neo-async@2.6.2:
     resolution: {integrity: sha512-Yd3UES5mWCSqR+qNT93S3UoYUkqAZ9lLg8a7g9rimsWmYGK8cVToA4/sF3RrshdyV3sAGMXVUmpMYOw+dLpOuw==}
 
-  node-mdaemon-api@25.0.0-alpha.38:
-    resolution: {integrity: sha512-WoIQUv4zvvA0WxQ0Bz2h1EUlAKuTEOFmRnCCm39QDdT3Vw4FgH9solxtAiVOnpN2Rm6/Dyc+VLs9OLjjOdFCiw==}
+  node-mdaemon-api@25.0.3-alpha.42:
+    resolution: {integrity: sha512-8OxCboKz83G819B9tspZCWAHzlpxglB/oKXpUij4oQEAI96ZXdEamcZKLrRrt0XHn2eJJSmfWSOb4sBvHJQcjA==}
     engines: {node: '>=19.0.0 <23'}
+    cpu: [x64]
     os: [win32]
 
   source-map@0.6.1:
     resolution: {integrity: sha512-UjgapumWlbMhkBgzT7Ykc5YXUT46F0iKu8SGXq0bcwP5dz/h0Plj6enJqjz1Zbq2l5WaqYnrVbwWOWMyF3F47g==}
     engines: {node: '>=0.10.0'}
 
-  systeminformation@5.25.11:
-    resolution: {integrity: sha512-jI01fn/t47rrLTQB0FTlMCC+5dYx8o0RRF+R4BPiUNsvg5OdY0s9DKMFmJGrx5SwMZQ4cag0Gl6v8oycso9b/g==}
+  systeminformation@5.27.8:
+    resolution: {integrity: sha512-d3Z0gaQO1MlUxzDUKsmXz5y4TOBCMZ8IyijzaYOykV3AcNOTQ7mT+tpndUOXYNSxzLK3la8G32xiUFvZ0/s6PA==}
     engines: {node: '>=8.0.0'}
     os: [darwin, linux, win32, freebsd, openbsd, netbsd, sunos, android]
     hasBin: true
@@ -63,7 +64,7 @@ packages:
 
 snapshots:
 
-  commander@12.1.0: {}
+  commander@14.0.0: {}
 
   handlebars@4.7.8:
     dependencies:
@@ -78,11 +79,11 @@ snapshots:
 
   neo-async@2.6.2: {}
 
-  node-mdaemon-api@25.0.0-alpha.38: {}
+  node-mdaemon-api@25.0.3-alpha.42: {}
 
   source-map@0.6.1: {}
 
-  systeminformation@5.25.11: {}
+  systeminformation@5.27.8: {}
 
   uglify-js@3.19.3:
     optional: true
